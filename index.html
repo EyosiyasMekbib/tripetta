@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tripetta</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -20,17 +21,15 @@
 
         .primary-green {
             background-color: #7ed957;
-            /* Replace with exact green color code if different */
-            /* color: white; */
         }
     </style>
 </head>
 
-<body class="bg-white text-gray-800 mx-auto">
+<body class="bg-white text-gray-800">
 
     <!-- Header -->
-    <header class="primary-green">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <header class="primary-green flex justify-center">
+        <div class="container flex justify-between items-center p-4">
             <!-- Logo -->
             <div class="flex items-center">
                 <img src="./logo.png" alt="Tripetta Logo" class="h-10 mr-2">
@@ -53,87 +52,16 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto pb-12">
+    <main class="mx-auto pb-12">
         <!-- Hero Section -->
-        <section class="hero-bg flex flex-col justify-center items-start text-left text-white px-6 md:px-14">
-            <div class="w-full max-w-2xl">
+        <section class="hero-bg flex flex-col justify-center items-start text-left text-white px-6 md:px-auto">
+            <div class="w-full max-w-2xl px-14">
                 <h1 class="text-4xl md:text-5xl font-bold mb-6">Introducing America's first AI travel planner</h1>
                 <p class="text-lg md:text-xl mb-8">No more spreadsheets, calendars, and travel searches. Describe your trip - we'll make the schedule.</p>
                 <a href="#" class="primary-green text-white px-6 py-3 rounded-full text-lg hover:opacity-80">Start for Free</a>
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="py-8 bg-gray-50 md:mx-14">
-            <div class="container mx-auto text-center mb-12 px-4">
-                <h2 class="text-3xl md:text-4xl font-bold">What you can do with it.</h2>
-            </div>
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Vacation ideas</h3>
-                    <p class="text-gray-600">Our AI can suggest countries, cities, small towns, and national parks you would be interested in.</p>
-                </div>
-                <div class="bg-primary-green shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Personalized to you</h3>
-                    <p>Your travel plans are customized based on who you're traveling with, your food preferences, preferred wake-up time, and other factors.</p>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">On-the-go availability</h3>
-                    <p class="text-gray-600">Your travel plans are accessible offline when you lose connection.</p>
-                </div>
-                <div class="bg-primary-green shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Public transit</h3>
-                    <p>Our AI can plan bus and metro travel in any city in the world, taking into account current transit repairs and delays.</p>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Share trips with friends</h3>
-                    <p class="text-gray-600">Invite friends to Tripetta so you can collaborate on travel planning.</p>
-                </div>
-                <div class="bg-primary-green shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                    <h3 class="text-2xl font-semibold mb-4">Activities near home</h3>
-                    <p>Plan first dates, adventures, and hangouts with friends close to home.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Travel Guides Section -->
-        <section class="py-8 primary-green">
-            <div class="container mx-auto text-center mb-12 px-4">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">Travel Guides</h2>
-            </div>
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-                <!-- Card 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400" alt="Los Angeles" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">2 days in Los Angeles</h3>
-                        <p class="text-gray-700 mb-4">Indulge in the epitome of luxury during your two-day escape to Los Angeles with our curated travel guide focused on opulent accommodations and upscale experiences.</p>
-                        <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400" alt="Paris" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">5 days in Paris</h3>
-                        <p class="text-gray-700 mb-4">Paris, the City of Light, captivates every visitor with its timeless charm and cultural richness. Explore iconic landmarks and immerse yourself in the vibrant atmosphere.</p>
-                        <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400" alt="New York" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">3 days in New York</h3>
-                        <p class="text-gray-700 mb-4">Experience the vibrancy of New York City with our exclusive three-day guide. Discover world-famous attractions and hidden gems in the city that never sleeps.</p>
-                        <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
-                    </div>
-                </div>
-                <!-- Add more cards as needed -->
-            </div>
-        </section>
-
-        <!-- Flights and Hotels Section -->
         <section class="py-8 bg-gray-50 md:mx-14">
             <div class="container mx-auto text-center mb-12 px-4">
                 <h2 class="text-3xl md:text-4xl font-bold">Flights and Hotels</h2>
@@ -172,35 +100,137 @@
 
             <!-- Hotels Section -->
             <div class="container mx-auto text-center mb-12 px-4">
-                <h2 class="text-3xl md:text-4xl font-bold">American destinations...</h2>
+                <h2 class="text-3xl md:text-4xl font-bold">American destinations.</h2>
             </div>
             <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <h3 class="text-xl font-semibold mb-4">Hotels in Manhattan</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Manhattan" class="rounded-lg mb-4">
-                    <p class="text-gray-600">Hotels from $117 per night.</p>
-                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-4 inline-block">Find hotels</a>
+                    <img src="https://images.unsplash.com/photo-1697764712400-34946f9bf270?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manhattan" class="rounded-lg mb-4 h-48 object-cover">
+                    <p class="text-gray-600 mb-4">Hotels from $117 per night.</p>
+                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-auto inline-block">Find hotels</a>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <h3 class="text-xl font-semibold mb-4">Hotels in Chicago</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Chicago" class="rounded-lg mb-4">
-                    <p class="text-gray-600">Hotels from $109 per night.</p>
-                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-4 inline-block">Find hotels</a>
+                    <img src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chicago" class="rounded-lg mb-4 h-48 object-cover">
+                    <p class="text-gray-600 mb-4">Hotels from $109 per night.</p>
+                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-auto inline-block">Find hotels</a>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <h3 class="text-xl font-semibold mb-4">Hotels in Washington DC</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Washington DC" class="rounded-lg mb-4">
-                    <p class="text-gray-600">Hotels from $89 per night.</p>
-                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-4 inline-block">Find hotels</a>
+                    <img src="https://plus.unsplash.com/premium_photo-1661963123153-5471a95b7042?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Washington DC" class="rounded-lg mb-4 h-48 object-cover">
+                    <p class="text-gray-600 mb-4">Hotels from $89 per night.</p>
+                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-auto inline-block">Find hotels</a>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Card 4 -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
                     <h3 class="text-xl font-semibold mb-4">Hotels in Virginia</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Virginia" class="rounded-lg mb-4">
-                    <p class="text-gray-600">Hotels from $61 per night.</p>
-                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-4 inline-block">Find hotels</a>
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Virginia" class="rounded-lg mb-4 h-48 object-cover">
+                    <p class="text-gray-600 mb-4">Hotels from $61 per night.</p>
+                    <a href="#" class="primary-green text-white px-4 py-2 rounded-full text-sm hover:opacity-75 mt-auto inline-block">Find hotels</a>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="py-8 primary-green">
+            <div class="container mx-auto text-center mb-12 px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">What you can do with it.</h2>
+            </div>
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <!-- Vacation Ideas Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <div class="mb-4 text-primary-green">
+                        <i class="fas fa-globe text-5xl"></i> <!-- Font Awesome Icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Vacation ideas</h3>
+                    <p class="text-gray-600 text-center">Our AI can suggest countries, cities, small towns, and national parks you would be interested in.</p>
+                </div>
+                <!-- Personalized to You Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <div class="mb-4 text-primary-green">
+                        <i class="fas fa-user-circle text-5xl"></i> <!-- Font Awesome Icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Personalized to you</h3>
+                    <p class="text-gray-600 text-center">Your travel plans are customized based on who you're traveling with, your food preferences, preferred wake-up time, and other factors.</p>
+                </div>
+                <!-- On-the-Go Availability Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <div class="mb-4 text-primary-green">
+                        <i class="fas fa-wifi text-5xl"></i> <!-- Font Awesome Icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">On-the-go availability</h3>
+                    <p class="text-gray-600 text-center">Your travel plans are accessible offline when you lose connection.</p>
+                </div>
+                <!-- Public Transit Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <div class="mb-4 text-primary-green">
+                        <i class="fas fa-bus text-5xl"></i> <!-- Font Awesome Icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Public transit</h3>
+                    <p class="text-gray-600 text-center">Our AI can plan bus and metro travel in any city in the world, taking into account current transit repairs and delays.</p>
+                </div>
+                <!-- Share Trips with Friends Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <div class="mb-4 text-primary-green">
+                        <i class="fas fa-users text-5xl"></i> <!-- Font Awesome Icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Share trips with friends</h3>
+                    <p class="text-gray-600 text-center">Invite friends to Tripetta so you can collaborate on travel planning.</p>
+                </div>
+                <!-- Activities Near Home Card -->
+                <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center">
+                    <div class="mb-4 text-primary-green">
+                        <i class="fas fa-home text-5xl"></i> <!-- Font Awesome Icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Activities near home</h3>
+                    <p class="text-gray-600 text-center">Plan first dates, adventures, and hangouts with friends close to home.</p>
                 </div>
             </div>
         </section>
+      
+
+        <!-- Travel Guides Section -->
+        <section class="py-8">
+            <div class="container mx-auto text-center mb-12 px-4">
+                <h2 class="text-3xl md:text-4xl font-bold">Travel Guides</h2>
+            </div>
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/flagged/photo-1575555201693-7cd442b8023f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Los Angeles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">2 days in Los Angeles</h3>
+                        <p class="text-gray-700 mb-8">Indulge in the epitome of luxury during your two-day escape to Los Angeles with our curated travel guide focused on opulent accommodations.</p>
+                        <a href="#" class="primary-green text-white px-6 py-3 rounded-full text-lg hover:opacity-80 mb-8">View trip</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHBhcmlzfGVufDB8fHx8MTY4MjA0NzE4MA&ixlib=rb-1.2.1&q=80&w=600" alt="Paris" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">5 days in Paris</h3>
+                        <p class="text-gray-700 mb-8">Paris, the City of Light, captivates every visitor with its timeless charm and cultural richness. Explore iconic landmarks and immerse yourself in the vibrant atmosphere.</p>
+                        <a href="#" class="primary-green text-white px-6 py-3 rounded-full text-lg hover:opacity-80 mb-8">View trip</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1602828889956-45ec6cee6758?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="New York" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">3 days in New York</h3>
+                        <p class="text-gray-700 mb-8">Experience the vibrancy of New York City with our exclusive three-day guide. Discover world-famous attractions and hidden gems in the city that never sleeps.</p>
+                        <a href="#" class="primary-green text-white px-6 py-3 rounded-full text-lg hover:opacity-80 mb-8">View trip</a>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
