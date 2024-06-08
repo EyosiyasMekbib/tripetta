@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tripetta</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Inter', sans-serif;
-            }
 
-      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripetta</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
         .hero-bg {
-            background-image: linear-gradient(to right, rgba(6, 20, 3,1), rgba(255, 255, 255, 0.2)), url('./hero.webp');
+            background-image: linear-gradient(to right, rgba(6, 20, 3, 1), rgba(255, 255, 255, 0.2)), url('./hero.webp');
             background-size: cover;
             background-position: right center;
             height: 70vh;
         }
-            .primary-green {
-                background-color: #7ed957; /* Replace with exact green color code if different */
-                /* color: white; */
-            }
-        </style>
-    </head>
-    
+
+        .primary-green {
+            background-color: #7ed957;
+            /* Replace with exact green color code if different */
+            /* color: white; */
+        }
+    </style>
+</head>
+
 <body class="bg-white text-gray-800 mx-auto">
 
     <!-- Header -->
-    <header class="primary-green ">
-        <div class="container px-14 flex justify-between items-center p-4">
+    <header class="primary-green">
+        <div class="container mx-auto flex justify-between items-center p-4">
             <!-- Logo -->
             <div class="flex items-center">
                 <img src="./logo.png" alt="Tripetta Logo" class="h-10 mr-2">
             </div>
-            
+
             <!-- Navigation Links -->
             <nav class="hidden md:flex space-x-6">
                 <a href="#" class="text-white hover:opacity-75">Hotels</a>
@@ -53,21 +55,20 @@
     <!-- Main Content -->
     <main class="container mx-auto pb-12">
         <!-- Hero Section -->
-        <section class="hero-bg flex flex-col justify-center items-start text-left text-white px-14">
+        <section class="hero-bg flex flex-col justify-center items-start text-left text-white px-6 md:px-14">
             <div class="w-full max-w-2xl">
-                <h1 class="text-4xl  md:text-5xl font-bold mb-6">Introducing America's first AI travel planner</h1>
-                <p class=" text-lg md:text-xl mb-8">No more spreadsheets, calendars, and travel searches. Describe your trip - we'll make the schedule.</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Introducing America's first AI travel planner</h1>
+                <p class="text-lg md:text-xl mb-8">No more spreadsheets, calendars, and travel searches. Describe your trip - we'll make the schedule.</p>
                 <a href="#" class="primary-green text-white px-6 py-3 rounded-full text-lg hover:opacity-80">Start for Free</a>
             </div>
         </section>
-    
 
         <!-- Features Section -->
-        <section class="py-8 bg-gray-50 mx-14">
-            <div class="container mx-auto text-center mb-12">
+        <section class="py-8 bg-gray-50 md:mx-14">
+            <div class="container mx-auto text-center mb-12 px-4">
                 <h2 class="text-3xl md:text-4xl font-bold">What you can do with it.</h2>
             </div>
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
                 <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                     <h3 class="text-2xl font-semibold mb-4">Vacation ideas</h3>
                     <p class="text-gray-600">Our AI can suggest countries, cities, small towns, and national parks you would be interested in.</p>
@@ -95,85 +96,85 @@
             </div>
         </section>
 
-                <!-- Travel Guides Section -->
-<section class="py-8 primary-green">
-    <div class="container mx-auto text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold">Travel Guides</h2>
-    </div>
-    <div class="container px-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/600x400" alt="Los Angeles" class="w-full h-48 object-cover">
-            <div class="p-6">
-                <h3 class="text-2xl font-bold mb-2">2 days in Los Angeles</h3>
-                <p class="text-gray-700 mb-4">Indulge in the epitome of luxury during your two-day escape to Los Angeles with our curated travel guide focused on opulent accommodations and upscale experiences.</p>
-                <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
+        <!-- Travel Guides Section -->
+        <section class="py-8 primary-green">
+            <div class="container mx-auto text-center mb-12 px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Travel Guides</h2>
             </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/600x400" alt="Paris" class="w-full h-48 object-cover">
-            <div class="p-6">
-                <h3 class="text-2xl font-bold mb-2">5 days in Paris</h3>
-                <p class="text-gray-700 mb-4">Paris, the City of Light, captivates every visitor with its timeless charm and cultural richness. Explore iconic landmarks and immerse yourself in the vibrant atmosphere.</p>
-                <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400" alt="Los Angeles" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">2 days in Los Angeles</h3>
+                        <p class="text-gray-700 mb-4">Indulge in the epitome of luxury during your two-day escape to Los Angeles with our curated travel guide focused on opulent accommodations and upscale experiences.</p>
+                        <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400" alt="Paris" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">5 days in Paris</h3>
+                        <p class="text-gray-700 mb-4">Paris, the City of Light, captivates every visitor with its timeless charm and cultural richness. Explore iconic landmarks and immerse yourself in the vibrant atmosphere.</p>
+                        <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400" alt="New York" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">3 days in New York</h3>
+                        <p class="text-gray-700 mb-4">Experience the vibrancy of New York City with our exclusive three-day guide. Discover world-famous attractions and hidden gems in the city that never sleeps.</p>
+                        <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
             </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-            <img src="https://via.placeholder.com/600x400" alt="New York" class="w-full h-48 object-cover">
-            <div class="p-6">
-                <h3 class="text-2xl font-bold mb-2">3 days in New York</h3>
-                <p class="text-gray-700 mb-4">Experience the vibrancy of New York City with our exclusive three-day guide. Discover world-famous attractions and hidden gems in the city that never sleeps.</p>
-                <a href="#" class="inline-block bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600">View trip</a>
-            </div>
-        </div>
-        <!-- Add more cards as needed -->
-    </div>
-</section>
+        </section>
 
-         <!-- Flights and Hotels Section -->
-         <section class="py-8 bg-gray-50 mx-14">
-            <div class="container mx-auto text-center mb-12">
+        <!-- Flights and Hotels Section -->
+        <section class="py-8 bg-gray-50 md:mx-14">
+            <div class="container mx-auto text-center mb-12 px-4">
                 <h2 class="text-3xl md:text-4xl font-bold">Flights and Hotels</h2>
             </div>
             <div class="primary-green shadow-lg rounded-lg p-6 mb-8">
-                <div class="flex justify-between items-center flex-wrap">
-                    <div class="flex flex-col">
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-4 flex-wrap">
+                    <div class="flex flex-col w-full lg:w-auto">
                         <label for="origin" class="text-black">Origin</label>
-                        <input type="text" id="origin" placeholder="Addis Ababa" class="border border-gray-300 rounded p-2 w-full md:w-auto">
+                        <input type="text" id="origin" placeholder="Addis Ababa" class="border border-gray-300 rounded p-2 w-full lg:w-auto">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col w-full lg:w-auto">
                         <label for="destination" class="text-black">Destination</label>
-                        <input type="text" id="destination" placeholder="Destination" class="border border-gray-300 rounded p-2 w-full md:w-auto">
+                        <input type="text" id="destination" placeholder="Destination" class="border border-gray-300 rounded p-2 w-full lg:w-auto">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col w-full lg:w-auto">
                         <label for="depart-date" class="text-black">Depart date</label>
-                        <input type="date" id="depart-date" class="border border-gray-300 rounded p-2 w-full md:w-auto text-black">
+                        <input type="date" id="depart-date" class="border border-gray-300 rounded p-2 w-full lg:w-auto text-black">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col w-full lg:w-auto">
                         <label for="return-date" class="text-black">Return date</label>
-                        <input type="date" id="return-date" class="border border-gray-300 rounded p-2 w-full md:w-auto text-black">
+                        <input type="date" id="return-date" class="border border-gray-300 rounded p-2 w-full lg:w-auto text-black">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col w-full lg:w-auto">
                         <label for="passengers" class="text-black">Passengers</label>
-                        <select id="passengers" class="border border-gray-300 rounded p-2 w-full md:w-auto text-black">
+                        <select id="passengers" class="border border-gray-300 rounded p-2 w-full lg:w-auto text-black">
                             <option>1 passenger</option>
                             <option>2 passengers</option>
                             <option>3 passengers</option>
                         </select>
                     </div>
                     <div class="flex items-center mt-4 md:mt-0">
-                        <button class="bg-white px-6 py-3 rounded-full text-black hover:opacity-80">Search</button>
+                        <button class="bg-white px-6 py-3 rounded-full text-black hover:opacity-80 w-full lg:w-auto">Search</button>
                     </div>
                 </div>
             </div>
 
             <!-- Hotels Section -->
-            <div class="container mx-auto text-center mb-12">
+            <div class="container mx-auto text-center mb-12 px-4">
                 <h2 class="text-3xl md:text-4xl font-bold">American destinations...</h2>
             </div>
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
                 <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                     <h3 class="text-xl font-semibold mb-4">Hotels in Manhattan</h3>
                     <img src="https://via.placeholder.com/300x200" alt="Manhattan" class="rounded-lg mb-4">
@@ -200,42 +201,34 @@
                 </div>
             </div>
         </section>
-
-
-
-        
-
     </main>
 
     <!-- Footer -->
-    
-<footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
-        <!-- Video Embed Section -->
-        <div class="flex justify-center items-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=umtLMxTENZU" frameborder="0" allowfullscreen class="rounded-lg shadow-lg"></iframe>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+            <!-- Video Embed Section -->
+            <div class="flex justify-center items-center">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen class="rounded-lg shadow-lg"></iframe>
+            </div>
+            <!-- Video and Description Section -->
+            <div class="flex flex-col justify-center">
+                <h2 class="text-2xl font-bold mb-4">Planning a Trip? Use Tripetta.</h2>
+                <p class="mb-6">
+                    Tripetta is America’s most advanced AI travel planner, offering a range of cutting-edge capabilities to streamline your travel planning experience. Unlike Google Maps, the routes created by Tripetta are tuned to your innate human element; personalized to your interests and travel preferences. Each trip the AI generates is synced to your hotel, and automatically includes information about public transit, opening hours, and the addresses of each attraction. Read more about our vision for Tripetta:
+                </p>
+                <a href="#" class="bg-orange-500 text-white px-6 py-3 rounded-full text-lg hover:bg-orange-600">Learn more</a>
+            </div>
         </div>
-        <!-- Video and Description Section -->
-        <div class="flex flex-col justify-center">
-            <h2 class="text-2xl font-bold mb-4">Planning a Trip? Use Tripetta.</h2>
-            <p class="mb-6">
-                Tripetta is America’s most advanced AI travel planner, offering a range of cutting-edge capabilities to streamline your travel planning experience. Unlike Google Maps, the routes created by Tripetta are tuned to your innate human element; personalized to your interests and travel preferences. Each trip the AI generates is synced to your hotel, and automatically includes information about public transit, opening hours, and the addresses of each attraction. Read more about our vision for Tripetta:
+
+        <div class="container mx-auto text-center mt-12 px-6">
+            <p class="mb-4">
+                <a href="#" class="underline font-semibold">Contact Tripetta Group Corp.</a><br>
+                partnerships@tripetta.com<br>
             </p>
-            <a href="#" class="bg-orange-500 text-white px-6 py-3 rounded-full text-lg hover:bg-orange-600">Learn more</a>
+            <p class="mt-4">© 2024 Tripetta Group Corporation. All rights reserved.</p>
         </div>
-
-    </div>
-
-    <div class="container mx-auto text-center mt-12 px-6">
-        <p class="mb-4">
-            <a href="#" class="underline font-semibold">Contact Tripetta Group Corp.</a><br>
-            partnerships@tripetta.com<br>
-          
-        </p>
-        <p class="mt-4">© 2024 Tripetta Group Corporation. All rights reserved.</p>
-    </div>
-</footer>
-
+    </footer>
 
 </body>
+
 </html>
